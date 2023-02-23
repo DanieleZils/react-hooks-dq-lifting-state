@@ -1,10 +1,10 @@
 import React from "react";
 
 
-function Menu() {
+function Menu({handleClick}) {
 
 // function toggleMenu(){
-
+console.log(handleClick)
 // }
   return (
     <div className="menu item">
@@ -13,7 +13,7 @@ function Menu() {
           type="checkbox"
           name="public"
           checked={false}
-          onChange={(handleClick) => console.log("toggle")}
+          onChange={() => handleClick()}
         />
         <label>Toggle Dark Mode</label>
       </div>

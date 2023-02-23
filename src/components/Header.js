@@ -13,7 +13,7 @@ function Header() {
     <div className={`ui fixed menu ${darkMode ? "inverted" : ""}`}>
       <div className="menu item">Fwitter</div>
       <div className="right menu">
-        <Menu onClick={handleClick} />
+        <Menu handleClick={handleClick} />
       </div>
     </div>
   );
